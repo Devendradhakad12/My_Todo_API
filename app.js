@@ -46,5 +46,5 @@ mongoose.connection.on("connected",()=>{
 
 app.listen(PORT, () => {
   connectToDB();
-  console.log(`app listning on http://localhost:${port}`);
+  console.log(`app listning on http://localhost:${PORT}`);
 });
