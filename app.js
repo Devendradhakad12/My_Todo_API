@@ -10,7 +10,7 @@ import cookieParser from "cookie-parser";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT;
+const PORT = process.env.PORT;
 
 
 
@@ -44,7 +44,7 @@ mongoose.connection.on("connected",()=>{
     console.log("mongoDB connected!")
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   connectToDB();
   console.log(`app listning on http://localhost:${port}`);
 });
