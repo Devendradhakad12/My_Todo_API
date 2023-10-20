@@ -10,7 +10,7 @@ import cookieParser from "cookie-parser";
 
 import cluster from "node:cluster";
 import cpus from "node:os";
-const numCpus = cpus.availableParallelism();
+const numCpus = cpus.cpus.length;
 import process from "node:process";
 
 //* Cluster
